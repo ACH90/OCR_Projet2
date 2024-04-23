@@ -24,15 +24,15 @@ body {
     padding: 30px 0;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 .nav-link {
-    display: inline-block; /* Pour s'assurer que les liens sont disposés horizontalement */
     transition: color 0.3s; /* Transition de couleur fluide */
     padding: 30px 0;
     border-top: #0065fc00 2px solid;
-}
-
-.nav-link:nth-child(1) {
-    margin-right: 50px; /* Ajustez la marge comme vous le souhaitez */
 }
 
 .nav-link:hover {
@@ -43,7 +43,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .main-container {
