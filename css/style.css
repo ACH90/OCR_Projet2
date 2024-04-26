@@ -52,9 +52,99 @@ header {
     box-sizing: border-box;
 }
 
+.headline {
+    margin-bottom: 35px;
+}
+
+.recherche-form {
+    display: flex;
+    align-items: center;
+    width: 377px;
+    height: 49px;
+}
+
+.i-logo{
+    background-color: #F2F2F2;
+    padding: 16px;
+    border-radius: 15px 0 0 15px;
+    color: black;
+}
+
+.recherche-input {
+    height: 49px;
+    border: 1px dashed #F2F2F2;
+    /* color: black; */
+    font-weight: bold;
+    /* border-right: none; */
+    font-family: Raleway;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.13px;
+text-align: center;
+gap: 10px;
+
+}
+
+.recherche-btn {
+    width: Hug (132px)px;
+    height: Fixed (49px)px;
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21,13px;
+    text-align: center;
+}
+
+.recherche-btn .fa-magnifying-glass{
+    color: white;
+}
 a {
     color: inherit;
     text-decoration: none;
+}
+
+.filterBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.filters-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    padding: 16px;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filters-list li:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info i {
+    border: #DEEBFF 1px solid;
+    border-radius: 50%;
+    padding: 7px;
 }
 
 .section-title {
