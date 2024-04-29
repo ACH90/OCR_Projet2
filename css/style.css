@@ -168,6 +168,13 @@ a {
     color: var(--main-bg-color)
 }
 
+.show-more {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -186,6 +193,12 @@ a {
     width: 65%;
 }
 
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
 .hebergements-title {
     display: flex;
     justify-content: space-between;
@@ -194,6 +207,7 @@ a {
 
 .hebergements .card {
     margin-top: 33px;
+    width: 30%;
 }
 .hebergements .card img {
     object-fit: cover;
