@@ -311,7 +311,7 @@
     <script>
         // Détecter si l'utilisateur est sur mobile
         function isMobile() {
-            return window.matchMedia("(max-width: 768px)").matches;
+            return window.matchMedia("(max-width: 767px)").matches;
         }
 
         // Fonction pour modifier le contenu du bouton en fonction de la taille de l'écran
@@ -327,6 +327,32 @@
         // Exécuter la fonction au chargement de la page et lors du redimensionnement de la fenêtre
         window.addEventListener('load', updateButtonContent);
         window.addEventListener('resize', updateButtonContent);
+
+    //--------------------
+
+
+    function mobileMode() {
+    // Vérifiez si l'affichage est au format mobile
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (isMobile) {
+        // Sélectionnez les sections "Hébergements" et "Populaires"
+        const hebergementsSection = document.querySelector(".hebergements");
+        const populairesSection = document.querySelector(".populaires");
+
+        // Sélectionnez le parent des sections
+        const parentElement = document.querySelector(".hebergements-and-populaires");
+
+        // Utilisez appendChild pour ajouter la section "Populaires" avant la section "Hébergements"
+        parentElement.appendChild(populairesSection);
+        parentElement.appendChild(hebergementsSection);
+    }
+}
+
+// Appelez la fonction mobileMode lors du chargement du DOM
+document.addEventListener("DOMContentLoaded", mobileMode);
+
+    
     </script>
 
 </body>
