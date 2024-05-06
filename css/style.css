@@ -64,6 +64,14 @@ header {
     height: 49px;
 }
 
+.recherche-form .fa-search {
+    display: none; /* Cache la loupe */
+  }
+  
+  .recherche-form .rechercher-text {
+    display: inline; /* Affiche le texte "Rechercher" */
+  }
+
 .i-logo{
     background-color: #F2F2F2;
     padding: 16px;
@@ -439,6 +447,15 @@ footer li {
         width: 100%;
     }
 
+    .recherche-form .fa-search {
+        display: inline; /* Affiche la loupe */
+        color: white;
+      }
+      
+      .recherche-form .rechercher-text {
+        display: none; /* Cache le texte "Rechercher" */
+      }
+
     .recherche-input {
         width: 100%;
     }
@@ -446,11 +463,7 @@ footer li {
     .recherche-btn {
         border-radius: 15px 15px 15px 15px;
     }
-    /* .recherche-input {
 
-        width: 65%;
-
-    } */
 
    
 
@@ -488,6 +501,7 @@ footer li {
 
     .hebergements {
         background-color: white;
+        order: 2; /* Changez l'ordre pour afficher "Hébergements" en second */
     }
 
     .hebergements-cards {
@@ -501,6 +515,7 @@ footer li {
 
     .populaires {
         background-color: var(--main-bg-color);
+        order: 1; /* Changez l'ordre pour afficher "Populaires" en premier */
     }
     .populaires-cards {
         display: block;
