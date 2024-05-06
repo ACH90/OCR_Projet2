@@ -93,8 +93,8 @@ header {
 }
 
 .recherche-btn {
-    width: Hug (132px)px;
-    height: Fixed (49px)px;
+    width: 132px;
+    height: 49px;
     padding: 15px 16px 15px 16px;
     border-radius: 0px 15px 15px 0px;
     border: none;
@@ -102,7 +102,7 @@ header {
     color: white;
     font-size: 18px;
     font-weight: 700;
-    line-height: 21,13px;
+    line-height: 21.13px;
     text-align: center;
 }
 
