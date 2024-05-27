@@ -389,12 +389,17 @@ footer li {
         justify-content: space-between;
     }
 
+    .populaires-cards .card {
+        margin-top: 0px;
+        width: 268px;
+    }
+
     .populaires-cards a {
         width: 30%;
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
